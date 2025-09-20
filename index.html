@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MovieMixtapes</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Gênero Musical</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Gênero Cinematográfico</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Cantores</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Diretores</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Atores</a>
+                </li>
+            </ul>
+            <img src="/img/logo.png" alt="Logo da MovieMixtapes" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Movie</b>Mixtapes</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Categorias</a></li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Gênero Musical</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Gênero Cinematográfico</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Cantores</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Diretores</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Atores</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Meus discos</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/favoritos.svg" alt="Meus favoritos" class="container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/compras.svg" alt="Carrinho de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossos álbuns os seus filmes favoritos!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua nova música favorita?">
+    </section>
+    
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <div class="carrossel__container">
+            <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/aftersun.png" alt="Capa editada do filme AfterSun"></div>
+                <div class="swiper-slide"><img src="img/pequeninos.png" alt="Capa editada do filme O Mundo dos Pequeninos"></div>
+                <div class="swiper-slide"><img src="img/reis.jpg" alt="Capa editada do filme Os Reis do Mundo"></div>
+                <div class="swiper-slide"><img src="img/stars.jpg" alt="Capa editada do filme A Culpa é das Estrelas"></div>
+                <div class="swiper-slide"><img src="img/topgun.png" alt="Capa editada do filme Top Gun Maverick"></div>
+                <div class="swiper-slide"><img src="img/voz.jpg" alt="Capa editada do filme A Voz do Silêncio"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+            <div class="card__descrição">
+                <div class="descrição">
+                    <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descrição__titulo-musica">Coraline - Dark Cabaret</h2>
+                    <p class="descrição__texto">Um dos filmes mais clássicos do mundo agora pode ser ouvido! Ouça Coraline em uma versão Dark Cabaret que promete passar todas as emoções do longa-metragem; curiosidade, angústia, adrenalina e muito mais.</p>
+                </div>
+                <img src="img/coraline.jpg" alt="Capa editada do filme Coraline" class="descrição__imagem  ancora__imagem">
+            </div>
+
+                <div class="card__botões">
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/favoritos.svg" alt="Favoritar música"></li>
+                        <li class="botões__item"><img src="img/compras.svg" alt="Adicionar ao carrinho de compras"></li>
+                    </ul>
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais Vendidos</h2>
+        <div class="carrossel__container">
+        <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/carros.jpg" alt="Capa editada do filme Carros"></div>
+            <div class="swiper-slide"><img src="img/killbill.jpg" alt="Capa editada do filme Kill Bill"></div>
+            <div class="swiper-slide"><img src="img/monstros.jpg" alt="Capa editada do filme Monstros S.A"></div>
+            <div class="swiper-slide"><img src="img/pulpfiction.png" alt="Capa editada do filme Pulp Fiction"></div>
+            <div class="swiper-slide"><img src="img/cupido.jpg" alt="Capa editada do filme Operação Cupido"></div>
+            <div class="swiper-slide"><img src="img/velozes.jpg" alt="Capa editada do filme Velozes e Furiosos: Desafio em Toquio"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <div class="card__descrição">
+                <div class="descrição">
+                    <h3 class="descrição__titulo">★★★★★</h3>
+                    <h3 class="descrição__titulo">Produtora do Mês</h3>
+                    <h2 class="descrição__titulo-musica">Mabel Oliveira</h2>
+                    <p class="descrição__texto">Beatmaker e escritora, Mabel Oliveira mostra sua arte através da música, criando emoções por meio de batidas.</p>
+                </div>
+                <img src="img/produtora.jpg" alt="Foto da produtora ficticia Mabel Oliveira" class="descrição__imagem  ancora__imagem__produtora">
+            </div>
+
+            <div class="card__botões">
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/favoritos.svg" alt="Favoritar música"></li>
+                    <li class="botões__item"><img src="img/compras.svg" alt="Adicionar ao carrinho de compras"></li>
+                </ul>
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </div>    
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">GÊNEROS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Pop</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Suspense</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Rock</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Eletrônica</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Jazz</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Romance</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Terror</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Lo-Fi</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de músicas, novos colaboradores, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Desenvolvido por Francis.</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Veja Mais</li>
+            <li class="lista-rodape__item">
+                <img src="img/github.png" alt="Logo do Github" class= "rodape__imagem"><a href="https://github.com/" class="rodape__link">GitHub.</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/vercel.png" alt="Logo do Vercel" class= "rodape__imagem"><a href="https://vercel.com/francis-projects-0ee8cbb4" class="rodape__link">Vercel.</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/linkedin.png" alt="Logo do Linkedin" class= "rodape__imagem"><a href="https://www.linkedin.com/in/francis-de-moura-pereira-277147256/" class="rodape__link">LinkedIn.</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+    </script>
+</body>
+
+</html>
